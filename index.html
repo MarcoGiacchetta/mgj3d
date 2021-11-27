@@ -9,9 +9,11 @@
     <title>MGJ 3D</title>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="estilos.css" />
 </head>
@@ -19,37 +21,94 @@
 <body>
     <header class="header">
         <a href="./index.html">
-            <img src="./images/MGJ3D_Logo_1.5.png" alt="logo" />
+            <img class="animate__animated animate__bounceInLeft" An animated element src="./images/MGJ3D_Logo_1.5.png"
+                alt="logo" />
         </a>
-        <nav>
+        <nav class="navegador">
             <!-- LISTA DESORDENADA -->
-            <ul>
-                <li><a href="./index.html"> Inicio</a></li>
-                <li><a href="./materiales.html"> Materiales </a></li>
-                <li><a href="./modelado3d.html"> Modelado 3D </a></li>
-                <li><a href="./quienessomos.html"> Quienes somos </a></li>
-                <li><a href="./contacto.html"> Contacto </a></li>
-            </ul>
+            <div>
+                <a href="./index.html"> Inicio</a>
+            </div>
+
+            <div>
+                <a href="#materiales"> Materiales </a>
+            </div>
+
+            <div>
+                <a href="#modelado3d"> Modelado 3D </a>
+            </div>
+
+            <div>
+                <a href="./contacto.html"> Contacto </a>
+            </div>
+            </div>
         </nav>
     </header>
 
     <section class="topImageIndex">
-        <h1>Haz realidad tus prototipos soñados</h1>
+        <div>
+            <h2>Haz realidad tus prototipos soñados</h2>
+            <p>Si se pude pensar, se puede imprimir</p>
+        </div>
+    </section>
+
+    <section class="bajoImgHeader">
+        <div class="bannerIndex">
+            <img src="./images/Index images/envío 2.png" alt="logo envio">
+            <p>Envíos gratuitos</p>
+        </div>
+
+        <div class="bannerIndex">
+            <img src="./images/Index images/presu.png" alt="presupuesto">
+            <p>Presupuesto grauito</p>
+        </div>
+
+        <div class="bannerIndex">
+            <img src="./images/Index images/reloj.png" alt="reloj">
+            <p>Proceso rápido</p>
+        </div>
+
     </section>
 
     <section class="biografia">
         <p>
-            Tenemos a tu disposición todo tipo de impresoras para todo tipo de
+            Ponte en conctacto con nosotros y elegiremos para ti el modelo y tipo de impresora que más se adapte a
+            tus
             requisitos.
-            Trabajamos directamente con empresas de prototipado industrial y con
-            pequeñas PYMES.
         </p>
-        <img src="./images/index image 2 3d printers.png" alt="impresoras 3D">
+        <img src="./images/Index images/kom-godt-igang-med-3d-print.jpg" alt="asesoramiento 3D">
     </section>
 
+    <section class="procesoTrabajo">
+        <div>
+            <img src="./images/Index images/1.png" alt="subida documento pc">
+            <p>Sube tu archivo 3D</p>
+        </div>
+
+        <div>
+            <img src="./images/Index images/2.png" alt="seleccion filamento">
+            <p>Selecciona el tipo y el color del filamento</p>
+        </div>
+
+        <div>
+            <img src="./images/Index images/3.png" alt="precio online">
+            <p>Obtén el precio al instante</p>
+        </div>
+
+        <div>
+            <img src="./images/Index images/4.png" alt="empezamo impresión">
+            <p>Empezamos con tu impresión</p>
+        </div>
+
+        <div>
+            <img src="./images/Index images/5.png" alt="recepción envío">
+            <p>Recibe tu pedido en 24 horas</p>
+        </div>
+
+    </section>
 
     <section class="lista">
-        <img src="./images/index filamentos.jpg" alt="filamentos" />
+        <img id="materiales" src="./images/index filamentos.jpg" alt="filamentos" />
         <div>
             <h2>Tenemos todo tipo de materiales disponibles</h2>
             <ul>
@@ -62,8 +121,88 @@
         </div>
     </section>
 
-    <footer>
+    <section class="figurasMateriales">
+        <div>
+            <img src="./images/Materiales images/materiales pla.jpg" alt="figura pla">
+            <h2>PLA</h2>
+            <p>Para prototipos rápidos y mecanizables</p>
+        </div>
+
+        <div>
+            <img src="./images/Materiales images/materiales abs.jpeg" alt="figura abs">
+            <h2>ABS</h2>
+            <p>Compuesto resistente a impactos y fácil de mecanizar</p>
+        </div>
+
+        <div>
+            <img src="./images/Materiales images/materiales-petg.jpg" alt="figura PETG">
+            <h2>PETG</h2>
+            <p>Buena resistencia química y mecánica, no desprende olores</p>
+        </div>
+
+        <div>
+            <img src="./images/Materiales images/materiales flex.jpg" alt="figura flex">
+            <h2>Filaflex</h2>
+            <p>Elástico y anti-adherente, puede estirarse 5 veces.</p>
+        </div>
+
+        <div>
+            <img src="./images/Materiales images/materiales resina.jpeg" alt="figura resina">
+            <h2>Resina</h2>
+            <p>Ofrece la mayor calidad a la hora de imprimir</p>
+        </div>
+    </section>
+
+
+    <section id="modelado3d" class="topImageModelado">
+        <h2>Diseño de tu modelo 3D</h2>
+    </section>
+    <section class="biografia">
+        <p>
+            Disponemos de un equipo multidisciplinar formado por diseñadores e
+            ingenieros con los que cubrimos un amplio abanico en cuanto a
+            necesidades técnicas
+        </p>
+        <img src="./images/modelado 3d derecha.png" alt="modelado 3D" />
+    </section>
+
+    <section class="procesoTrabajo">
+        <div>
+            <img src="./images/Modelado 3d/Servicio cad.png" alt="serv cad">
+            <p>Servicio de diseño CAD</p>
+        </div>
+
+        <div>
+            <img src="./images/Modelado 3d/Diseño org.png" alt="serv modelado">
+            <p>Servicio de modelado orgánico</p>
+        </div>
+
+        <div>
+            <img src="./images/Modelado 3d/Desarrollo ing.png" alt="Desarrollo ingeniería"">
+            <p>Servicio de ingeniería técnica</p>
+        </div>
+
+        <div>
+            <img src=" ./images/Modelado 3d/Seguimiento proyecto.png" alt="seguimiento proy">
+            <p>Seguimiento de tu proyecto</p>
+        </div>
+
+    </section>
+
+
+    <section class="enlaceFormulario">
+        <p>
+            Rellena el formulario de contacto y nos pondremos en contacto contigo lo antes posible
+        </p>
+        <a href="./contacto.html">
+            <img src="./images/formulario_logo.png" alt="formulario">
+        </a>
+    </section>
+
+    <footer class="gridFooter">
         <p>Todos los derechos reservados</p>
+        <a href="mailto:mgj3designs@gmail.com"> Envíanos un correo electrónico</a>
+        <a href="https://www.instagram.com/mgj_3d/"> ¡Suíguenos en Instagram!</a>
     </footer>
 </body>
 
