@@ -9,9 +9,11 @@
     <title>MGJ 3D</title>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="estilos.css" />
 </head>
@@ -19,17 +21,28 @@
 <body>
     <header class="header">
         <a href="./index.html">
-            <img src="./images/MGJ3D_Logo_1.5.png" alt="logo" />
+            <img class="animate__animated animate__bounceInLeft" An animated element src="./images/MGJ3D_Logo_1.5.png"
+                alt="logo" />
         </a>
-        <nav>
+        <nav class="navegador">
             <!-- LISTA DESORDENADA -->
-            <ul>
-                <li><a href="./index.html"> Inicio</a></li>
-                <li><a href="./materiales.html"> Materiales </a></li>
-                <li><a href="./modelado3d.html"> Modelado 3D </a></li>
-                <li><a href="./quienessomos.html"> Quienes somos </a></li>
-                <li><a href="./contacto.html"> Contacto </a></li>
-            </ul>
+            <div>
+                <div">
+                    <a href="./index.html"> Inicio</a>
+            </div>
+
+            <div>
+                <a href="#materiales"> Materiales </a>
+            </div>
+
+            <div>
+                <a href="#modelado3d"> Modelado 3D </a>
+            </div>
+
+            <div>
+                <a href="./contacto.html"> Contacto </a>
+            </div>
+            </div>
         </nav>
     </header>
 
@@ -41,34 +54,55 @@
     <!-- FORMULARIOS -->
     <section class="formulario">
         <form action="/" method="post">
-            <label for="nombre">Nombre:</label>
-            <input id="nombre" type="text" placeholder="ingrese su nombre" />
+            <div>    
+                <div>
+                    <label for="nombre">Nombre y apellidos:</label>
+                    <input id="nombre" type="text" placeholder="ingrese su nombre" />
+                </div>
+            
+                <div>
+                    <label for="email">Correo:</label>
+                 <input id="email" type="email" placeholder="ingrese su email" />
+                </div>
+            </div>
 
-            <label for="email">Correo:</label>
-            <input id="email" type="email" placeholder="ingrese su email" />
+            <div class="mensaje">
+                <label for="mensaje">Mensaje:</label>
+                <input id="mensaje" type="text" placeholder="escriba su mensaje" />
+            </div>
 
-            <label for="mensaje">Mensaje:</label>
-            <input id="mensaje" type="text" placeholder="escriba su mensaje" />
+            <div>
+                <div>
+                    <p> Tipo de material </p>
+                    <select>
+                    <option value="PLA"> PLA </option>
+                    <option value="ABS"> ABS </option>
+                    <option value="PETG"> PETG </option>
+                    <option value="Filaflex"> Filaflex </option>
+                    <option value="Resina"> Resina </option>
+                    </select>
+                </div>
+                <div>
+                    <p> Adjuntar archivos </p>
+                    <input type="file" value="elegir archivos" />
+                </div>
+            </div>
 
-            <p> Adjuntar archivos </p>
-            <input type="file" value="elegir archivos" />
-            <p> Tipo de material </p>
-            <select>
-                <option value="PLA"> PLA </option>
-                <option value="ABS"> ABS </option>
-                <option value="PETG"> PETG </option>
-                <option value="Filaflex"> Filaflex </option>
-                <option value="Resina"> Resina </option>
-            </select>
-
-            <label><input class="formularioCheckbox" type="checkbox" id="cbox1" value="first_checkbox"> He leído y acepto la politica de privacidad
-                y condiciones de uso.</label>
-            <input type="submit" />
+            <div>
+                <label>
+                    <input class="formularioCheckbox" type="checkbox" id="cbox1" value="first_checkbox"> He leído y acepto
+                    la politica de privacidad
+                    y condiciones de uso.</label>
+                <input type="submit" />
+            </div>
         </form>
+
     </section>
 
-    <footer>
+    <footer class="gridFooter">
         <p>Todos los derechos reservados</p>
+        <a href="mailto:mgj3designs@gmail.com"> Envíanos un correo electrónico</a>
+        <a href="https://www.instagram.com/mgj_3d/"> ¡Suíguenos en Instagram!</a>
     </footer>
 </body>
 

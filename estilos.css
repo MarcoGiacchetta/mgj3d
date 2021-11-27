@@ -1,96 +1,81 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 /*Header*/
 .header {
   background-color: #ade8f4;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
-  position: -webkit-sticky;
+  position: webkit-sticky;
   position: sticky;
   top: 0px;
 }
 
 .header a {
-  width: 7%;
+  width: 10%;
 }
 
 .header a img {
   width: 100%;
   height: 100%;
-  margin: 5% 5% 0% 100%;
+  margin: 5% 5% 0% 0%;
 }
 
-.header nav {
-  width: 70%;
-}
-.header nav ul {
-  list-style: none;
-  text-decoration: none;
-}
-
-.header nav ul li {
-  font-size: 150%;
-  display: inline-block;
-  margin-left: 2%;
+.navegador {
+  display: flex;
+  flex-direction: row;
+  font-size: 180%;
+  width: 40%;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 /*Top Images*/
 .topImageIndex {
-  background-image: url(./images/image\ index\ top\ 2.jpg);
+  display: flex;
+  background-image: url(./images/Top-image.jpg);
   background-repeat: no-repeat;
-  color: black;
-  font: 600;
-  font-size: 300%;
-  text-align: center;
+  color: #ffd60a;
   background-size: cover;
-  padding: 1% 0%;
+  padding: 0% 0%;
   margin: 0%;
-  background-position: center;
+  background-position: bottom;
+  align-items: center;
+  justify-content: center;
 }
 
-.topImageMateriales {
-  background-image: url(./images/materiales\ filamentos\ topv2.jpg);
-  background-repeat: no-repeat;
-  color: white;
-  font: 600;
+.topImageIndex div h2 {
   font-size: 300%;
   text-align: center;
-  background-size: cover;
-  padding: 1% 0%;
-  margin: 0%;
-  background-position: center;
+}
+
+.topImageIndex div p {
+  text-align: center;
+  font-size: 180%;
+  font-weight: 600;
 }
 
 .topImageModelado {
+  display: flex;
   background-image: url(./images/modelado3d\ topv2.jpg);
   background-repeat: no-repeat;
   color: black;
-  font: 600;
-  font-size: 300%;
-  text-align: center;
   background-size: cover;
-  padding: 1% 0%;
+  padding: 0% 0%;
   margin: 0%;
   background-position: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.topImageQuienes {
-  background-image: url(./images/quienes\ somos\ topv2.jpg);
-  background-repeat: no-repeat;
-  color: white;
-  font: 600;
+.topImageModelado h2 {
   font-size: 300%;
-  text-align: center;
-  background-size: cover;
-  padding: 1% 0%;
-  margin: 0%;
-  background-position: 25% 75%;
 }
 
 .topImageContacto {
@@ -106,34 +91,101 @@ body {
   background-position: 25% 58%;
 }
 
+/*banner index*/
+
+.bajoImgHeader {
+  display: flex;
+  background-color: #76c893;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bajoImgHeader div {
+  width: 10%;
+  text-align: center;
+}
+
+.bajoImgHeader div img {
+  width: 45%;
+  height: 45%;
+}
+
+.bajoImgHeader div p {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+.bannerIndex {
+  display: flex;
+  align-items: center;
+  margin: 0.5%;
+  font-weight: 500;
+}
+
 /*Biografia*/
 
 .biografia {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  margin: 2%;
+}
+
+.biografia div {
+  display: flex;
+  flex-direction: column;
+}
+
+.biografia h2 {
+  display: inline-block;
+  margin: 1%;
 }
 
 .biografia p {
   display: inline-block;
-  font-size: 150%;
+  font-size: 180%;
   width: 50%;
   margin: 1%;
 }
 
 .biografia img {
-  width: 30%;
-  height: 30%;
+  width: 40%;
+  height: 40%;
+  border-radius: 5%;
+}
+
+/*Proceso explicado con iconos*/
+
+.procesoTrabajo {
+  display: flex;
+  background-color: rgb(216, 206, 206);
+  justify-content: center;
+}
+
+.procesoTrabajo div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  margin: 1% 1% 0% 1%;
+  width: 15%;
+}
+
+.procesoTrabajo div img {
+  width: 45%;
+}
+
+.procesoTrabajo div p {
+  text-align: center;
 }
 
 /*lista index*/
 
 .lista {
   display: flex;
-  justify-content: space-around;
-  align-items: stretch;
+  justify-content: space-evenly;
+  align-items: center;
   margin: 2%;
 }
 
@@ -152,32 +204,74 @@ body {
   border-radius: 5%;
 }
 
-/*Materiales pagina 2*/
-
-.tablaMateriales table tr th {
-  background-color: #cee5d0;
-  font-size: 130%;
+/*Info materiales*/
+.figurasMateriales {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
 }
 
-.tablaMateriales table tr td {
-  background-color: #f3f0d7;
-  font-size: 130%;
+.figurasMateriales div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  margin-top: 5%;
+  width: 15%;
+  background-color: #d8f3dc;
+  border-radius: 5%;
+  padding: 1%;
 }
 
-.infoMateriales {
-display: flex;
-flex-wrap: wrap;
-transition: all;
+.figurasMateriales div img {
+  width: 80%;
+  border-radius: 5%;
+  margin-top: 5%;
 }
 
-.section div img:hover {
-  transform: scale(3);
+.figurasMateriales div h2 {
+  margin: 0%;
 }
 
+.figurasMateriales div p {
+  text-align: center;
+  margin: 0%;
+}
 
+/*Envío formulario*/
 
+.enlaceFormulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.enlaceFormulario p {
+  font-size: 150%;
+  display: inline-block;
+  margin-top: 2%;
+}
+
+.enlaceFormulario a {
+  display: flex;
+  justify-content: center;
+}
+
+.enlaceFormulario a img {
+  width: 20%;
+  margin-bottom: 10%;
+}
 
 /*Formulario*/
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  margin: 2% 0% 2% 0%;
+}
 
 .formulario p {
   font-size: 150%;
@@ -207,24 +301,330 @@ transition: all;
   height: 20px;
 }
 
-/*RRSS*/
-
-.rrss p {
-  font-size: 150%;
+.mensaje {
+  width: 50%;
 }
 
-.rrss a img {
+/*Footer*/
+
+.gridFooter {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #f0e5cf;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Media querie smartphone vertical */
+
+@media (max-width: 479px) {
+  .header {
+    background-color: #ade8f4;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    position: webkit-sticky;
+    position: sticky;
+    top: 0px;
+  }
+
+  .header a img {
+    width: 100%;
+    height: 100%;
+    margin: 5% 5% 0% 0%;
+  }
+
+  .navegador {
+    display: flex;
+    flex-direction: row;
+    font-size: 90%;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  /*Top Images*/
+  .topImageIndex {
+    display: flex;
+    background-image: url(./images/Top-image.jpg);
+    background-repeat: no-repeat;
+    color: #ffd60a;
+    background-size: cover;
+    padding: 0% 0%;
+    margin: 0%;
+    background-position: bottom;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topImageIndex div h2 {
+    font-size: 180%;
+    text-align: center;
+  }
+
+  .topImageIndex div p {
+    text-align: center;
+    font-size: 100%;
+    font-weight: 600;
+  }
+
+  .topImageModelado {
+    display: flex;
+    background-image: url(./images/modelado3d\ topv2.jpg);
+    background-repeat: no-repeat;
+    color: black;
+    background-size: cover;
+    padding: 0% 0%;
+    margin: 0%;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topImageModelado h2 {
+    font-size: 180%;
+    display: inline-block;
+  }
+
+  .topImageContacto {
+    background-image: url(./images/conacto\ top.jpg);
+    background-repeat: no-repeat;
+    color: white;
+    font: 600;
+    font-size: 180%;
+    text-align: center;
+    background-size: cover;
+    padding: 1% 0%;
+    margin: 0%;
+    background-position: 25% 58%;
+  }
+
+  /*banner index*/
+
+  .bajoImgHeader {
+    display: flex;
+    background-color: #76c893;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .bajoImgHeader div {
+    width: 20%;
+    text-align: center;
+    margin-right: 6%;
+  }
+
+  .bajoImgHeader div img {
+    width: 45%;
+    height: 45%;
+  }
+
+  .bajoImgHeader div p {
+    display: inline-block;
+    margin-right: 6%;
+  }
+
+  .bannerIndex {
+    display: flex;
+    align-items: center;
+    margin: 0.5%;
+    font-weight: 500;
+  }
+
+  /*Biografia*/
+
+  .biografia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+  }
+
+  .biografia div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .biografia h2 {
+    display: inline-block;
+    margin: 1%;
+  }
+
+  .biografia p {
+    font-size: 120%;
+    width: 50%;
+    margin: 1%;
+  }
+
+  .biografia img {
+    width: 40%;
+    height: 40%;
+    border-radius: 5%;
+  }
+
+  /*Proceso explicado con iconos*/
+
+  .procesoTrabajo {
+    display: flex;
+    background-color: rgb(216, 206, 206);
+    justify-content: space-around;
+    
+  }
+
+  .procesoTrabajo div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    margin: 1% 1% 0% 1%;
+    width: 15%;
+  }
+
+  .procesoTrabajo div img {
+    width: 45%;
+  }
+
+  .procesoTrabajo div p {
+    text-align: center;
+    font-size: 50%;
+  }
+
+  /*lista index*/
+
+  .lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0%;
+  }
+
+  .lista h2 {
+    font-size: 100%;
+  }
+
+  .lista ul li {
+    list-style: none;
+    font-size: 80%;
+  }
+
+  .lista img {
+    width: 30%;
+    height: 30%;
+    border-radius: 5%;
+    margin-top: 5%;
+  }
+
+  /*Info materiales*/
+  .figurasMateriales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    align-items: center;
+  }
+
+  .figurasMateriales div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    margin-top: 5%;
+    width: 50%;
+    background-color: #d8f3dc;
+    border-radius: 5%;
+    padding: 1%;
+  }
+
+  .figurasMateriales div img {
+    width: 80%;
+    border-radius: 5%;
+    margin-top: 5%;
+  }
+
+  .figurasMateriales div h2 {
+    margin: 0%;
+    font-size: 100%;
+  }
+
+  .figurasMateriales div p {
+    text-align: center;
+    margin: 0%;
+    font-size: 80%;
+  }
+
+  /*Envío formulario*/
+
+  .enlaceFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .enlaceFormulario p {
+    font-size: 100%;
+    display: inline-block;
+    margin: 2%;
+  }
+
+  .enlaceFormulario a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .enlaceFormulario a img {
+    width: 15%;
+    margin-bottom: 10%;
+  }
+/*Formulario*/
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2% 0% 2% 0%;
+}
+
+.formulario p {
+  font-size: 100%;
+  margin-top: 5%;
+  margin-left: 1%;
+}
+
+.formulario form label {
+  font-size: 100%;
   display: list-item;
   list-style: none;
   margin: 1%;
 }
 
-/*Footer*/
-footer p {
-  background-color: #f0e5cf;
-  text-align: center;
-  font-size: 150%;
-  margin-top: 1%;
-  margin-bottom: 0%;
-  padding: 1%;
+.formulario form input {
+  font-size: 100%;
+  margin: 1%;
 }
+
+.formulario form select {
+  font-size: 100%;
+  margin: 1%;
+}
+
+.formularioCheckbox {
+  width: 20px;
+  height: 20px;
+}
+
+.mensaje {
+  width: 50%;
+}
+
+
+
+}
+
