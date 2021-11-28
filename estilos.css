@@ -14,6 +14,7 @@ body {
   position: webkit-sticky;
   position: sticky;
   top: 0px;
+  z-index: 5;
 }
 
 .header a {
@@ -189,55 +190,34 @@ body {
   margin: 2%;
 }
 
-.lista h2 {
-  font-size: 180%;
-}
-
-.lista ul li {
-  list-style: none;
-  font-size: 150%;
-}
-
 .lista img {
   width: 30%;
   height: 30%;
   border-radius: 5%;
 }
 
+#tituloTabla {
+  background-color: rgb(216, 206, 206);
+  border-color: rgb(216, 206, 206);
+  color: black;
+}
+
 /*Info materiales*/
-.figurasMateriales {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-bottom: 5%;
-}
 
-.figurasMateriales div {
+.figurasMateriales{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-weight: 500;
-  margin-top: 5%;
-  width: 15%;
-  background-color: #d8f3dc;
-  border-radius: 5%;
-  padding: 1%;
 }
 
-.figurasMateriales div img {
-  width: 80%;
-  border-radius: 5%;
-  margin-top: 5%;
+.figurasMateriales div div a{
+  background-color: rgb(216, 206, 206);
+  border-color: rgb(216, 206, 206);
+  color: black;
 }
 
-.figurasMateriales div h2 {
-  margin: 0%;
-}
-
-.figurasMateriales div p {
-  text-align: center;
-  margin: 0%;
+.figurasMateriales div div a:hover{
+  filter:contrast(50%);
 }
 
 /*Envío formulario*/
