@@ -18,7 +18,7 @@ body {
   background-repeat: no-repeat;
   color: whitesmoke;
   background-size: cover;
-  padding: 1% 1%;
+  padding: 10% 10%;
   margin: 0%;
   background-position: center;
   align-items: center;
@@ -26,12 +26,16 @@ body {
 }
 
 .topImageIndex div h2 {
-  font-size: 300%;
+  font-size: 350%;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
 .topImageIndex div p {
+  font-family: "Montserrat", sans-serif;
   text-align: center;
+  font-style: italic;
   font-size: 180%;
   font-weight: 600;
 }
@@ -179,21 +183,28 @@ body {
 
 /*Info materiales*/
 
-.figurasMateriales{
-  display: flex;
-  flex-direction: row;
+.figurasMateriales {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
   justify-content: center;
 }
 
-.figurasMateriales div div a{
+.figurasMateriales div {
+  margin: 10% 0% 10% 0%;
+}
+
+.figurasMateriales div div a {
   background-color: rgb(216, 206, 206);
   border-color: rgb(216, 206, 206);
   color: black;
 }
 
-.figurasMateriales div div a:hover{
-  filter:contrast(50%);
+.figurasMateriales div div a:hover {
+  filter: contrast(50%);
 }
+
+
 
 /*Envío formulario*/
 
@@ -260,6 +271,17 @@ body {
   width: 50%;
 }
 
+/*Carrusel de imagenes*/
+
+.carrImagenes {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35%;
+  margin-bottom: 1%;
+}
+
 /*Footer*/
 
 .gridFooter {
@@ -273,11 +295,10 @@ body {
 /* Media querie smartphone vertical */
 
 @media (max-width: 479px) {
-  
   /*Top Images*/
   .topImageIndex {
     display: flex;
-    background-image: url(./images/Top-image.jpg);
+    background-image: url(./images/makerbot.jpg);
     background-repeat: no-repeat;
     color: #ffd60a;
     background-size: cover;
@@ -366,7 +387,7 @@ body {
 
   .biografia {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 2%;
@@ -377,15 +398,11 @@ body {
     flex-direction: column;
   }
 
-  .biografia h2 {
-    display: inline-block;
-    margin: 1%;
-  }
-
   .biografia p {
     font-size: 120%;
     width: 50%;
     margin: 1%;
+    text-align: center;
   }
 
   .biografia img {
@@ -400,7 +417,7 @@ body {
     display: flex;
     background-color: rgb(216, 206, 206);
     justify-content: space-around;
-   }
+  }
 
   .procesoTrabajo div {
     display: flex;
@@ -448,45 +465,23 @@ body {
   }
 
   /*Info materiales*/
-  .figurasMateriales {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 5%;
-    align-items: center;
-  }
 
-  .figurasMateriales div {
-    display: flex;
-    flex-direction: column;
+  .figurasMateriales {
+    display: grid;
+    grid-template-columns: auto;
     align-items: center;
     justify-content: center;
-    font-weight: 500;
-    margin-top: 5%;
-    width: 50%;
-    background-color: #d8f3dc;
-    border-radius: 5%;
-    padding: 1%;
   }
 
-  .figurasMateriales div img {
-    width: 80%;
-    border-radius: 5%;
-    margin-top: 5%;
+  .figurasMateriales div div a {
+    background-color: rgb(216, 206, 206);
+    border-color: rgb(216, 206, 206);
+    color: black;
   }
 
-  .figurasMateriales div h2 {
-    margin: 0%;
-    font-size: 100%;
+  .figurasMateriales div div a:hover {
+    filter: contrast(50%);
   }
-
-  .figurasMateriales div p {
-    text-align: center;
-    margin: 0%;
-    font-size: 80%;
-  }
-
   /*Envío formulario*/
 
   .enlaceFormulario {
@@ -511,48 +506,44 @@ body {
     width: 15%;
     margin-bottom: 10%;
   }
-/*Formulario*/
+  /*Formulario*/
 
-.formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 2% 0% 2% 0%;
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2% 0% 2% 0%;
+  }
+
+  .formulario p {
+    font-size: 100%;
+    margin-top: 5%;
+    margin-left: 1%;
+  }
+
+  .formulario form label {
+    font-size: 100%;
+    display: list-item;
+    list-style: none;
+    margin: 1%;
+  }
+
+  .formulario form input {
+    font-size: 100%;
+    margin: 1%;
+  }
+
+  .formulario form select {
+    font-size: 100%;
+    margin: 1%;
+  }
+
+  .formularioCheckbox {
+    width: 20px;
+    height: 20px;
+  }
+
+  .mensaje {
+    width: 50%;
+  }
 }
-
-.formulario p {
-  font-size: 100%;
-  margin-top: 5%;
-  margin-left: 1%;
-}
-
-.formulario form label {
-  font-size: 100%;
-  display: list-item;
-  list-style: none;
-  margin: 1%;
-}
-
-.formulario form input {
-  font-size: 100%;
-  margin: 1%;
-}
-
-.formulario form select {
-  font-size: 100%;
-  margin: 1%;
-}
-
-.formularioCheckbox {
-  width: 20px;
-  height: 20px;
-}
-
-.mensaje {
-  width: 50%;
-}
-
-
-
-}
-
