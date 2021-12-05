@@ -1,0 +1,19 @@
+{
+  "name": "root_final",
+  "version": "1.0.0",
+  "description": "mgj 3d weeb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcotrece/mgj3d.git"
+  },
+  "author": "Marco Giacchetta Jimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcotrece/mgj3d/issues"
+  },
+  "homepage": "https://github.com/marcotrece/mgj3d#readme"
+}
