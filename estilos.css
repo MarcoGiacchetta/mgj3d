@@ -243,7 +243,7 @@ font-weight: 600;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2% 5% 10% 5%;
+  margin: 2% 20% 10% 20%;
 }
 
 .formulario div form div a {
@@ -283,7 +283,7 @@ font-weight: 600;
 }
 /* Media querie smartphone vertical */
 
-@media (max-width: 479px) {
+@media (max-width: 768px) {
   /*Top Images*/
   .topImageIndex {
     display: flex;
