@@ -1,0 +1,53 @@
+
+/*Envío formulario*/
+
+.enlaceFormulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 150%;
+    display: inline-block;
+    margin-top: 2%;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 20%;
+      margin-bottom: 10%;
+    }
+  }
+}
+
+
+/*Formulario*/
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 20% 10% 20%;
+
+  div form div a {
+    background-color: rgb(216, 206, 206);
+    border-color: rgb(216, 206, 206);
+    color: black;
+  }
+}
+
+/*Carrusel de imagenes*/
+
+.carrImagenes {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35%;
+  margin-bottom: 1%;
+}

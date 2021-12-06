@@ -1,0 +1,30 @@
+.biografia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    display: inline-block;
+    margin: 1%;
+  }
+
+  p {
+    display: inline-block;
+    font-size: 180%;
+    width: 50%;
+    margin: 1%;
+  }
+
+  img {
+    width: 40%;
+    height: 40%;
+    border-radius: 5%;
+  }
+}

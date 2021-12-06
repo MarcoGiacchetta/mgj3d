@@ -1,0 +1,18 @@
+/*Footer*/
+
+.gridFooter {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #22223b;
+    align-items: center;
+    justify-content: space-evenly;
+
+    p {
+        color: whitesmoke;
+    }
+
+    a {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+}
