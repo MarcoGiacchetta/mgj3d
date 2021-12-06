@@ -14,7 +14,7 @@ body {
 /*Top Images*/
 .topImageIndex {
   display: flex;
-  background-image: url(./images/makerbot.jpg);
+  background-image: url(../images/makerbot.jpg);
   background-repeat: no-repeat;
   color: whitesmoke;
   background-size: cover;
@@ -42,7 +42,7 @@ body {
 
 .topImageModelado {
   display: flex;
-  background-image: url(./images//diseño\ prueba\ 1.jpg);
+  background-image: url(../images//diseño\ prueba\ 1.jpg);
   background-repeat: no-repeat;
   color: whitesmoke;
   background-size: cover;
@@ -58,7 +58,7 @@ body {
 }
 
 .topImageContacto {
-  background-image: url(./images/contacto\ prueba.jpg);
+  background-image: url(../images/contacto\ prueba.jpg);
   background-repeat: no-repeat;
   color: white;
   font: 600;
