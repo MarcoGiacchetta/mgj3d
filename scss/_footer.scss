@@ -3,9 +3,10 @@
 .gridFooter {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #22223b;
+    background-color: #26282A;
     align-items: center;
     justify-content: space-evenly;
+    padding: 1% 0% 1% 0%;
 
     p {
         color: whitesmoke;
