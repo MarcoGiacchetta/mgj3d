@@ -104,8 +104,8 @@ body {
     width: 50%;
     margin: 1%; }
   .biografia img {
-    width: 40%;
-    height: 40%;
+    width: 30%;
+    height: 30%;
     border-radius: 5%; }
 
 .procesoTrabajo {
@@ -146,9 +146,9 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   align-items: center;
-  justify-content: center; }
+  justify-content: space-evenly; }
   .figurasMateriales div {
-    margin: 10% 0% 10% 0%; }
+    margin: 10% 0% 10% 10%; }
     .figurasMateriales div div a {
       background-color: #d8cece;
       border-color: #d8cece;
