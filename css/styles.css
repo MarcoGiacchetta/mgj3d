@@ -148,7 +148,7 @@ body {
   align-items: center;
   justify-content: space-evenly; }
   .figurasMateriales div {
-    margin: 10% 0% 10% 10%; }
+    margin: 10% 0% 10% 0%; }
     .figurasMateriales div div a {
       background-color: #d8cece;
       border-color: #d8cece;
@@ -291,27 +291,50 @@ body {
       margin: 1%;
       text-align: center; }
     .biografia img {
-      width: 40%;
-      height: 40%;
+      width: 60%;
       border-radius: 5%; }
   /*Proceso explicado con iconos*/
+  /*.procesoTrabajo {
+        display: flex;
+        background-color: rgb(216, 206, 206);
+        justify-content: space-around;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            margin: 1% 1% 0% 1%;
+            width: 15%;
+
+            img {
+                width: 45%;
+            }
+
+            p {
+                text-align: center;
+                font-size: 50%;
+            }
+        }
+    }*/
   .procesoTrabajo {
-    display: flex;
-    background-color: #d8cece;
-    justify-content: space-around; }
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #c2b2b2;
+    justify-items: center; }
     .procesoTrabajo div {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       font-weight: 500;
-      margin: 1% 1% 0% 1%;
-      width: 15%; }
+      width: 50%; }
       .procesoTrabajo div img {
-        width: 45%; }
+        width: 90%; }
       .procesoTrabajo div p {
         text-align: center;
-        font-size: 50%; }
+        font-size: 80%; }
   /*lista index*/
   .lista {
     display: flex;
@@ -325,8 +348,7 @@ body {
       list-style: none;
       font-size: 80%; }
     .lista img {
-      width: 30%;
-      height: 30%;
+      width: 65%;
       border-radius: 5%;
       margin: 5% 0% 5% 0%; }
   /*Info materiales*/
@@ -342,6 +364,23 @@ body {
     .figurasMateriales:hover {
       filter: contrast(50%); }
   /*Envío formulario*/
+  .procesoTrabajo2Col {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #c2b2b2;
+    justify-items: center; }
+    .procesoTrabajo2Col div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      width: 50%; }
+      .procesoTrabajo2Col div img {
+        width: 70%; }
+      .procesoTrabajo2Col div p {
+        text-align: center;
+        font-size: 80%; }
   .enlaceFormulario {
     display: flex;
     flex-direction: column;
@@ -368,6 +407,14 @@ body {
       background-color: #d8cece;
       border-color: #d8cece;
       color: black; }
+  /*Carrusel de imagenes*/
+  .carrImagenes {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-bottom: 1%; }
   .gridFooter {
     display: grid;
     grid-template-columns: auto auto auto;
