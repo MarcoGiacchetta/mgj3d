@@ -157,6 +157,23 @@ body {
       filter: contrast(50%); }
 
 /*Envío formulario*/
+.procesoTrabajo2Col {
+  display: flex;
+  background-color: #d8cece;
+  justify-content: center; }
+  .procesoTrabajo2Col div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    margin: 1% 1% 0% 1%;
+    width: 15%; }
+    .procesoTrabajo2Col div img {
+      width: 45%; }
+    .procesoTrabajo2Col div p {
+      text-align: center; }
+
 .enlaceFormulario {
   display: flex;
   flex-direction: column;
