@@ -67,7 +67,7 @@ body {
 
 .bajoImgHeader {
   display: flex;
-  background-color: #76c893;
+  background-color: #202124;
   justify-content: space-evenly;
   align-items: center; }
   .bajoImgHeader div {
@@ -78,13 +78,14 @@ body {
       height: 45%; }
     .bajoImgHeader div p {
       display: inline-block;
-      margin-left: 5%; }
+      margin-left: 5%;
+      color: white; }
 
 .bannerIndex {
   display: flex;
   align-items: center;
   margin: 0.5%;
-  font-weight: 500; }
+  font-weight: 300; }
 
 .biografia {
   display: flex;
@@ -126,6 +127,15 @@ body {
       text-align: center; }
 
 /*lista index*/
+.tituloMateriales {
+  display: inline-block;
+  display: flex;
+  justify-content: center; }
+  .tituloMateriales p {
+    display: inline-block;
+    margin-top: 2%;
+    font-size: 150%; }
+
 .lista {
   display: flex;
   justify-content: space-evenly;
@@ -149,6 +159,10 @@ body {
   justify-content: space-evenly; }
   .figurasMateriales div {
     margin: 10% 0% 10% 0%; }
+    .figurasMateriales div img {
+      width: 100%;
+      height: 10vw;
+      object-fit: cover; }
     .figurasMateriales div div a {
       background-color: #d8cece;
       border-color: #d8cece;
@@ -203,6 +217,16 @@ body {
     color: black; }
 
 /*Carrusel de imagenes*/
+/*
+.carrImagenes {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35%;
+  margin-bottom: 1%;
+}
+*/
 .carrImagenes {
   display: flex;
   width: 30%;
@@ -274,7 +298,7 @@ body {
   /*banner index*/
   .bajoImgHeader {
     display: flex;
-    background-color: #76c893;
+    background-color: #202124;
     justify-content: space-evenly;
     align-items: center; }
     .bajoImgHeader div {
@@ -291,7 +315,7 @@ body {
     display: flex;
     align-items: center;
     margin: 0.5%;
-    font-weight: 500; }
+    font-weight: 200; }
   /*Biografia*/
   .biografia {
     display: flex;
@@ -311,30 +335,6 @@ body {
       width: 60%;
       border-radius: 5%; }
   /*Proceso explicado con iconos*/
-  /*.procesoTrabajo {
-        display: flex;
-        background-color: rgb(216, 206, 206);
-        justify-content: space-around;
-
-        div {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            font-weight: 500;
-            margin: 1% 1% 0% 1%;
-            width: 15%;
-
-            img {
-                width: 45%;
-            }
-
-            p {
-                text-align: center;
-                font-size: 50%;
-            }
-        }
-    }*/
   .procesoTrabajo {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -353,6 +353,14 @@ body {
         text-align: center;
         font-size: 80%; }
   /*lista index*/
+  .tituloMateriales {
+    display: inline-block;
+    display: flex;
+    justify-content: center; }
+    .tituloMateriales p {
+      display: inline-block;
+      margin-top: 2%;
+      font-size: 80%; }
   .lista {
     display: flex;
     flex-direction: column;
@@ -369,17 +377,41 @@ body {
       border-radius: 5%;
       margin: 5% 0% 5% 0%; }
   /*Info materiales*/
+  /*
+    .figurasMateriales {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+
+        div a {
+            background-color: rgb(216, 206, 206);
+            border-color: rgb(216, 206, 206);
+            color: black;
+        }
+
+        &:hover {
+            filter: contrast(50%);
+        }
+    }
+    */
   .figurasMateriales {
     display: grid;
     grid-template-columns: auto;
     align-items: center;
-    justify-content: center; }
-    .figurasMateriales div div a {
-      background-color: #d8cece;
-      border-color: #d8cece;
-      color: black; }
-    .figurasMateriales:hover {
-      filter: contrast(50%); }
+    justify-content: space-evenly; }
+    .figurasMateriales div {
+      margin: 3% 0% 3% 0%; }
+      .figurasMateriales div img {
+        width: 100%;
+        height: 40vw;
+        object-fit: cover; }
+      .figurasMateriales div div a {
+        background-color: #d8cece;
+        border-color: #d8cece;
+        color: black; }
+      .figurasMateriales div div a:hover {
+        filter: contrast(50%); }
   /*Envío formulario*/
   .procesoTrabajo2Col {
     display: grid;

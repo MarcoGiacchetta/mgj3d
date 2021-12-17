@@ -1,6 +1,6 @@
 .bajoImgHeader {
   display: flex;
-  background-color: #76c893;
+  background-color: #202124;
   justify-content: space-evenly;
   align-items: center;
 
@@ -16,6 +16,7 @@
     p {
       display: inline-block;
       margin-left: 5%;
+      color: white;
     }
   }
 }
@@ -24,5 +25,5 @@
   display: flex;
   align-items: center;
   margin: 0.5%;
-  font-weight: 500;
+  font-weight: 300;
 }
