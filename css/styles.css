@@ -22,7 +22,7 @@ body {
   background-position: center;
   align-items: center;
   justify-content: center; }
-  .topImageIndex div h2 {
+  .topImageIndex div h1 {
     font-size: 350%;
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -91,8 +91,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 2%; }
+  align-items: center; }
   .biografia div {
     display: flex;
     flex-direction: column; }
@@ -102,39 +101,50 @@ body {
   .biografia p {
     display: inline-block;
     font-size: 180%;
-    width: 50%;
-    margin: 1%; }
+    width: 80%;
+    margin: 5% 0% 2% 0%; }
   .biografia img {
     width: 30%;
     height: 30%;
-    border-radius: 5%; }
+    border-radius: 5%;
+    margin-bottom: 5%; }
 
 .procesoTrabajo {
   display: flex;
-  background-color: #d8cece;
+  background-color: #202124;
   justify-content: center; }
   .procesoTrabajo div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-weight: 500;
+    font-weight: 300;
     margin: 1% 1% 0% 1%;
     width: 15%; }
     .procesoTrabajo div img {
       width: 45%; }
     .procesoTrabajo div p {
-      text-align: center; }
+      text-align: center;
+      color: white; }
 
 /*lista index*/
 .tituloMateriales {
-  display: inline-block;
   display: flex;
   justify-content: center; }
-  .tituloMateriales p {
+  .tituloMateriales h2 {
     display: inline-block;
     margin-top: 2%;
-    font-size: 150%; }
+    font-size: 300%; }
+
+.bobinasIzq {
+  width: 3%;
+  height: 3%;
+  margin: 2.5% 1% 0% 0%; }
+
+.bobinasDch {
+  width: 3%;
+  height: 3%;
+  margin: 2.5% 0% 0% 1%; }
 
 .lista {
   display: flex;
@@ -147,9 +157,9 @@ body {
     border-radius: 5%; }
 
 #tituloTabla {
-  background-color: #d8cece;
-  border-color: #d8cece;
-  color: black; }
+  background-color: #202124;
+  border-color: #202124º;
+  color: white; }
 
 /*Info materiales*/
 .figurasMateriales {
@@ -173,20 +183,21 @@ body {
 /*Envío formulario*/
 .procesoTrabajo2Col {
   display: flex;
-  background-color: #d8cece;
+  background-color: #202124;
   justify-content: center; }
   .procesoTrabajo2Col div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-weight: 500;
+    font-weight: 300;
     margin: 1% 1% 0% 1%;
     width: 15%; }
     .procesoTrabajo2Col div img {
       width: 45%; }
     .procesoTrabajo2Col div p {
-      text-align: center; }
+      text-align: center;
+      color: white; }
 
 .enlaceFormulario {
   display: flex;
@@ -199,10 +210,9 @@ body {
     margin-top: 2%; }
   .enlaceFormulario a {
     display: flex;
-    justify-content: center; }
-    .enlaceFormulario a img {
-      width: 20%;
-      margin-bottom: 10%; }
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 10%; }
 
 /*Formulario*/
 .formulario {
@@ -225,6 +235,7 @@ body {
   align-items: center;
   margin-left: 35%;
   margin-bottom: 1%;
+  
 }
 */
 .carrImagenes {
@@ -239,7 +250,7 @@ body {
 .gridFooter {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #26282A;
+  background-color: #202124;
   align-items: center;
   justify-content: space-evenly;
   padding: 1% 0% 1% 0%; }
@@ -328,7 +339,7 @@ body {
       flex-direction: column; }
     .biografia p {
       font-size: 120%;
-      width: 50%;
+      width: 90%;
       margin: 1%;
       text-align: center; }
     .biografia img {
@@ -338,14 +349,13 @@ body {
   .procesoTrabajo {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #c2b2b2;
     justify-items: center; }
     .procesoTrabajo div {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-weight: 500;
+      font-weight: 300;
       width: 50%; }
       .procesoTrabajo div img {
         width: 90%; }
@@ -354,13 +364,20 @@ body {
         font-size: 80%; }
   /*lista index*/
   .tituloMateriales {
-    display: inline-block;
     display: flex;
     justify-content: center; }
-    .tituloMateriales p {
+    .tituloMateriales h2 {
       display: inline-block;
       margin-top: 2%;
-      font-size: 80%; }
+      font-size: 150%; }
+  .bobinasIzq {
+    width: 5%;
+    height: 5%;
+    margin: 4% 1% 0% 0%; }
+  .bobinasDch {
+    width: 5%;
+    height: 5%;
+    margin: 4% 0% 0% 1%; }
   .lista {
     display: flex;
     flex-direction: column;
@@ -377,24 +394,6 @@ body {
       border-radius: 5%;
       margin: 5% 0% 5% 0%; }
   /*Info materiales*/
-  /*
-    .figurasMateriales {
-        display: grid;
-        grid-template-columns: auto;
-        align-items: center;
-        justify-content: center;
-
-        div a {
-            background-color: rgb(216, 206, 206);
-            border-color: rgb(216, 206, 206);
-            color: black;
-        }
-
-        &:hover {
-            filter: contrast(50%);
-        }
-    }
-    */
   .figurasMateriales {
     display: grid;
     grid-template-columns: auto;
@@ -416,20 +415,21 @@ body {
   .procesoTrabajo2Col {
     display: grid;
     grid-template-columns: auto auto;
-    background-color: #c2b2b2;
+    background-color: #202124;
     justify-items: center; }
     .procesoTrabajo2Col div {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-weight: 500;
+      font-weight: 300;
       width: 50%; }
       .procesoTrabajo2Col div img {
         width: 70%; }
       .procesoTrabajo2Col div p {
         text-align: center;
-        font-size: 80%; }
+        font-size: 80%;
+        color: white; }
   .enlaceFormulario {
     display: flex;
     flex-direction: column;
@@ -467,7 +467,7 @@ body {
   .gridFooter {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #22223b;
+    background-color: #202124;
     align-items: center;
     justify-content: space-evenly; }
     .gridFooter a {

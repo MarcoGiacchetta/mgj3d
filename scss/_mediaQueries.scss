@@ -105,7 +105,7 @@
 
         p {
             font-size: 120%;
-            width: 50%;
+            width: 90%;
             margin: 1%;
             text-align: center;
         }
@@ -121,14 +121,13 @@
     .procesoTrabajo {
         display: grid;
         grid-template-columns: auto auto auto;
-        background-color: rgb(194, 178, 178);
         justify-items: center;
         div {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            font-weight: 500;
+            font-weight: 300;
             width: 50%;
 
             img {
@@ -144,16 +143,28 @@
 
     /*lista index*/
 
+    
     .tituloMateriales {
-        display: inline-block;
         display: flex;
         justify-content: center;
-      
-        p {
-          display: inline-block;
-          margin-top: 2%;
-          font-size: 80%;
+    
+        h2 {
+        display: inline-block;
+        margin-top: 2%;
+        font-size: 150%;
         }
+    }
+    
+    .bobinasIzq {
+        width: 5%;
+        height: 5%;
+        margin: 4% 1% 0% 0%;
+    }
+    
+    .bobinasDch {
+        width: 5%;
+        height: 5%;
+        margin: 4% 0% 0% 1%;
     }
 
     .lista {
@@ -181,25 +192,7 @@
 
     /*Info materiales*/
 
-    /*
-    .figurasMateriales {
-        display: grid;
-        grid-template-columns: auto;
-        align-items: center;
-        justify-content: center;
-
-        div a {
-            background-color: rgb(216, 206, 206);
-            border-color: rgb(216, 206, 206);
-            color: black;
-        }
-
-        &:hover {
-            filter: contrast(50%);
-        }
-    }
-    */
-
+    
     .figurasMateriales {
         display: grid;
         grid-template-columns: auto;
@@ -232,14 +225,14 @@
     .procesoTrabajo2Col {
         display: grid;
         grid-template-columns: auto auto;
-        background-color: rgb(194, 178, 178);
+        background-color: #202124;
         justify-items: center;
         div {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            font-weight: 500;
+            font-weight: 300;
             width: 50%;
 
             img {
@@ -249,6 +242,7 @@
             p {
                 text-align: center;
                 font-size: 80%;
+                color: white;
             }
         }
     }
@@ -306,7 +300,7 @@
     .gridFooter {
         display: grid;
         grid-template-columns: auto auto auto;
-        background-color: #22223b;
+        background-color: #202124;
         align-items: center;
         justify-content: space-evenly;
 

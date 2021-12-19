@@ -1,15 +1,26 @@
 /*lista index*/
 
 .tituloMateriales {
-  display: inline-block;
   display: flex;
   justify-content: center;
 
-  p {
+  h2 {
     display: inline-block;
     margin-top: 2%;
-    font-size: 150%;
+    font-size: 300%;
   }
+}
+
+.bobinasIzq {
+  width: 3%;
+  height: 3%;
+  margin: 2.5% 1% 0% 0%;
+}
+
+.bobinasDch {
+  width: 3%;
+  height: 3%;
+  margin: 2.5% 0% 0% 1%;
 }
 
 .lista {
@@ -26,9 +37,9 @@
 }
 
 #tituloTabla {
-  background-color: rgb(216, 206, 206);
-  border-color: rgb(216, 206, 206);
-  color: black;
+  background-color: #202124;
+  border-color: #202124º;
+  color: white;
 }
 
 /*Info materiales*/
