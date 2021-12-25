@@ -227,17 +227,6 @@ body {
     color: black; }
 
 /*Carrusel de imagenes*/
-/*
-.carrImagenes {
-  display: flex;
-  width: 30%;
-  justify-content: center;
-  align-items: center;
-  margin-left: 35%;
-  margin-bottom: 1%;
-  
-}
-*/
 .carrImagenes {
   display: flex;
   width: 30%;
@@ -259,6 +248,71 @@ body {
   .gridFooter a {
     color: whitesmoke;
     text-decoration: none; }
+
+/*Pagina materiales*/
+.topImageMateriales {
+  display: flex;
+  background-image: url(../images/materiales_pagina.jpg);
+  background-repeat: no-repeat;
+  color: whitesmoke;
+  background-size: cover;
+  padding: 5%;
+  margin: 0%;
+  background-position: center;
+  align-items: center;
+  justify-content: center; }
+  .topImageMateriales h1 {
+    display: inline-block;
+    font-size: 300%; }
+
+.materialesPag {
+  display: flex;
+  align-items: center; }
+  .materialesPag .materialesDescripcion {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 5% 5% 5% 8%; }
+    .materialesPag .materialesDescripcion h2 {
+      display: inline-block; }
+    .materialesPag .materialesDescripcion p {
+      display: inline-block;
+      color: #706d6d;
+      margin-top: 3%; }
+  .materialesPag .materialesImagen {
+    display: flex; }
+    .materialesPag .materialesImagen img {
+      display: inline-block;
+      width: 60%;
+      border-radius: 2%; }
+
+.tituloBobinas {
+  margin: 2% 0% 2% 8%; }
+
+.coloresMateriales {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  margin-left: 10%; }
+  .coloresMateriales .cajaColorBobina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .coloresMateriales .cajaColorBobina img {
+      width: 20%; }
+
+.formularioBajoMaterial {
+  display: flex;
+  justify-content: space-around;
+  background-image: url(../images/diseño_prueba2.jpg);
+  padding: 6%;
+  background-size: cover;
+  margin: 0%;
+  background-position: 50% 25%;
+  align-items: center;
+  justify-content: center; }
+  .formularioBajoMaterial h2 {
+    margin-right: 10%; }
 
 /* Media querie smartphone vertical */
 @media (max-width: 768px) {
@@ -306,6 +360,11 @@ body {
     padding: 1% 0%;
     margin: 0%;
     background-position: 25% 58%; }
+  .topImageMateriales {
+    text-align: center; }
+    .topImageMateriales h1 {
+      display: inline-block;
+      font-size: 200%; }
   /*banner index*/
   .bajoImgHeader {
     display: flex;
@@ -411,6 +470,34 @@ body {
         color: black; }
       .figurasMateriales div div a:hover {
         filter: contrast(50%); }
+  .materialesPag {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+    .materialesPag .materialesImagen {
+      display: flex;
+      justify-content: center; }
+      .materialesPag .materialesImagen img {
+        display: inline-block;
+        width: 35%;
+        border-radius: 2%; }
+  .tituloBobinas {
+    margin: 2% 0% 2% 15%; }
+  .coloresMateriales {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 18%;
+    justify-content: center; }
+    .coloresMateriales .cajaColorBobina {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .coloresMateriales .cajaColorBobina img {
+        width: 20%; }
+      .coloresMateriales .cajaColorBobina p {
+        display: inline-block; }
   /*Envío formulario*/
   .procesoTrabajo2Col {
     display: grid;
@@ -473,4 +560,4 @@ body {
     .gridFooter a {
       color: whitesmoke;
       text-decoration: none;
-      font-size: 50%; } }
+      font-size: 80%; } }

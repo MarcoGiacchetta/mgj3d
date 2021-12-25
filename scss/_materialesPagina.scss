@@ -1,0 +1,93 @@
+/*Pagina materiales*/
+
+.topImageMateriales {
+    display: flex;
+    background-image: url(../images/materiales_pagina.jpg);
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    background-size: cover;
+    padding: 5%;
+    margin: 0%;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        display: inline-block;
+        font-size: 300%;
+    }
+}
+
+.materialesPag {
+    display: flex;
+    align-items: center;
+
+    .materialesDescripcion {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: 5% 5% 5% 8%;
+
+        h2 {
+            display: inline-block;
+        }
+
+        p {
+            display: inline-block;
+            color: rgb(112, 109, 109);
+            margin-top: 3%;
+        }
+    }
+
+    .materialesImagen {
+        display: flex;
+
+        img {
+            display: inline-block;
+            width: 60%;
+            border-radius: 2%;
+        }
+    }
+}
+
+.tituloBobinas {
+    margin: 2% 0% 2% 8% ;
+}
+
+.coloresMateriales {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin-left: 10%;
+
+    .cajaColorBobina{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+
+        img{
+            width: 20%;
+        }
+
+       
+    }
+}
+
+
+.formularioBajoMaterial {
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../images/diseño_prueba2.jpg);
+    padding: 6%;
+    background-size: cover;
+    margin: 0%;
+    background-position: 50% 25%;
+    align-items: center;
+    justify-content: center;
+
+    h2{
+        margin-right: 10%;
+        
+    }
+}

@@ -68,17 +68,7 @@
 
 /*Carrusel de imagenes*/
 
-/*
-.carrImagenes {
-  display: flex;
-  width: 30%;
-  justify-content: center;
-  align-items: center;
-  margin-left: 35%;
-  margin-bottom: 1%;
-  
-}
-*/
+
 
 @mixin carruselImagenes($display, $ancho, $justify, $align, $marginizq, $marginabajo) {
   display: $display;
