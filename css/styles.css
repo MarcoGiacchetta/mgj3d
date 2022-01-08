@@ -40,13 +40,13 @@ body {
   background-repeat: no-repeat;
   color: whitesmoke;
   background-size: cover;
-  padding: 10%;
+  padding: 6%;
   margin: 0%;
   background-position: center;
   align-items: center;
   justify-content: center; }
   .topImageModelado h2 {
-    font-size: 600%; }
+    font-size: 400%; }
 
 .topImageContacto {
   background-image: url(../images/contacto_prueba.jpg);
@@ -329,7 +329,7 @@ body {
     align-items: center;
     justify-content: center; }
     .topImageIndex div h2 {
-      font-size: 180%;
+      font-size: 60%;
       text-align: center; }
     .topImageIndex div p {
       text-align: center;
