@@ -9,6 +9,8 @@ body {
   position: sticky;
   top: 0px;
   z-index: 4; }
+  .header nav div a img {
+    width: 120%; }
 
 /*Top Images*/
 .topImageIndex {
@@ -79,7 +81,8 @@ body {
     .bajoImgHeader div p {
       display: inline-block;
       margin-left: 5%;
-      color: white; }
+      color: white;
+      letter-spacing: 1px; }
 
 .bannerIndex {
   display: flex;
@@ -99,9 +102,8 @@ body {
     display: inline-block;
     margin: 1%; }
   .biografia p {
-    display: inline-block;
     font-size: 180%;
-    width: 80%;
+    width: 90%;
     margin: 5% 0% 2% 0%; }
   .biografia img {
     width: 30%;
@@ -125,7 +127,8 @@ body {
       width: 45%; }
     .procesoTrabajo div p {
       text-align: center;
-      color: white; }
+      color: white;
+      letter-spacing: 1px; }
 
 /*lista index*/
 .tituloMateriales {
@@ -197,7 +200,8 @@ body {
       width: 45%; }
     .procesoTrabajo2Col div p {
       text-align: center;
-      color: white; }
+      color: white;
+      letter-spacing: 1px; }
 
 .enlaceFormulario {
   display: flex;
