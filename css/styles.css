@@ -102,9 +102,9 @@ body {
     display: inline-block;
     margin: 1%; }
   .biografia p {
+    display: inline-block;
     font-size: 180%;
-    width: 90%;
-    margin: 5% 0% 2% 0%; }
+    margin: 5% 0% 2% 5%; }
   .biografia img {
     width: 30%;
     height: 30%;
